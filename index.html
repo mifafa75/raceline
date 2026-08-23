@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مرکز تخصصی ریمپ ریس لاین | Raceline Remap</title>
+  <meta name="description" content="مرکز تخصصی ریمپ ریس لاین - ریمپ ایسیو، کالیبراسیون داینو، افزایش شتاب و کاهش مصرف در کرمانشاه - تلفن: 09187351735">
+  <meta name="keywords" content="مرکز تخصصی ریمپ ریس لاین, ریمپ کرمانشاه, تیونینگ, داینو, افزایش شتاب, دنا توربو, پژو 207, raceline remap">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#ef4444',
+              redHover: '#dc2626',
+              amber: '#f59e0b',
+              dark: '#0a0b0e',
+              card: '#12141c',
+              cardHover: '#191c28'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-carbon text-slate-100 min-h-screen flex flex-col selection:bg-red-500 selection:text-white" dir="rtl">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-red-950 via-red-900 to-red-950 border-b border-red-500/20 py-2 px-4 text-center text-xs font-semibold text-red-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-3 flex-wrap">
+      <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-red-500/30 text-white font-bold text-[10px]">
+        <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-ping"></span>
+        رزرو فعال
+      </span>
+      <span>مرکز تخصصی ریمپ ریس لاین - رزرو نوبت داینو با پرداخت ۱,۰۰۰,۰۰۰ تومان بیعانه</span>
+      <a href="tel:09187351735" class="inline-flex items-center gap-1 text-yellow-300 hover:text-white font-mono font-bold transition">
+        📞 09187351735
+      </a>
+      <a href="https://instagram.com/raceline_remap" target="_blank" class="hidden sm:inline-flex items-center gap-1 text-white hover:text-amber-300 transition underline underline-offset-4">
+        اینستاگرام: @raceline_remap 📸
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-slate-950/85 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO & TITLE -->
+      <a href="javascript:void(0)" onclick="window.app.navigateTo('home')" class="flex items-center gap-3 group">
+        <div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-red-500 shadow-lg shadow-red-500/30 group-hover:scale-105 transition duration-300 flex-shrink-0 bg-slate-900">
+          <img src="assets/img/logo.jpg" alt="مرکز تخصصی ریمپ ریس لاین" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-black text-lg md:text-xl tracking-tight text-white group-hover:text-red-400 transition">مرکز تخصصی ریمپ <span class="text-red-500 font-racing">ریس لاین</span></span>
+          </div>
+          <div class="text-[11px] text-slate-400 font-medium">کالیبراسیون داینو و ریمپ ایسیو در کرمانشاه</div>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAV LINKS -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+        <a href="javascript:void(0)" onclick="window.app.navigateTo('home')" class="text-slate-200 hover:text-red-400 transition" data-i18n="nav_home">صفحه اصلی</a>
+        <a href="javascript:void(0)" onclick="window.app.navigateTo('calculator')" class="text-slate-200 hover:text-red-400 transition" data-i18n="nav_calculator">محاسبه‌گر توان (داینو)</a>
+        <a href="#services-section" class="text-slate-200 hover:text-red-400 transition" data-i18n="nav_services">خدمات ریمپ</a>
+        <a href="javascript:void(0)" onclick="window.app.navigateTo('booking')" class="text-red-400 hover:text-red-300 font-bold transition flex items-center gap-1" data-i18n="nav_booking">
+          <span>رزرو نوبت</span>
+          <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+        </a>
+        <a href="javascript:void(0)" onclick="window.app.navigateTo('shop')" class="text-slate-200 hover:text-red-400 transition" data-i18n="nav_shop">فروشگاه آنلاین</a>
+        <a href="#projects-section" class="text-slate-200 hover:text-red-400 transition" data-i18n="nav_projects">پروژه‌ها</a>
+        <a href="#location-section" class="text-slate-200 hover:text-red-400 transition flex items-center gap-1">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-red-500"></i>
+          <span>آدرس روی نقشه</span>
+        </a>
+        <a href="javascript:void(0)" id="nav-admin-link" onclick="window.app.navigateTo('admin')" class="hidden text-amber-400 hover:text-amber-300 font-bold transition flex items-center gap-1">
+          <i data-lucide="shield" class="w-4 h-4"></i>
+          <span data-i18n="nav_admin">پنل مدیریت</span>
+        </a>
+      </nav>
+
+      <!-- RIGHT ACTION BUTTONS -->
+      <div class="flex items-center gap-2.5">
+        <!-- Direct Call Button Header (Desktop) -->
+        <a href="tel:09187351735" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-red-500/30 text-xs font-bold text-red-400 hover:bg-red-600 hover:text-white transition font-mono">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>0918 735 1735</span>
+        </a>
+
+        <!-- Language Switcher Toggle -->
+        <button id="lang-toggle-btn" onclick="window.app.setLanguage(window.app.lang === 'fa' ? 'en' : 'fa')" 
+          class="px-2.5 py-1.5 rounded-xl bg-slate-900 border border-white/10 text-xs font-bold text-slate-300 hover:text-white hover:border-white/20 transition flex items-center gap-1">
+          🇬🇧 English
+        </button>
+
+        <!-- Cart Drawer Button -->
+        <button onclick="window.app.toggleCartDrawer(true)" class="relative p-2.5 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-white hover:border-red-500/40 transition">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="cart-count-badge" class="hidden absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-red-600 text-white text-[10px] font-black flex items-center justify-center shadow-lg shadow-red-600/50">
+            0
+          </span>
+        </button>
+
+        <!-- Auth / Profile Button -->
+        <button id="nav-auth-btn" class="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-lg shadow-red-600/30">
+          <i data-lucide="user" class="w-4 h-4"></i>
+          <span data-i18n="nav_login">ورود / عضویت</span>
+        </button>
+
+        <!-- Dedicated Nav Logout Button (Shown when logged in) -->
+        <button id="nav-logout-btn" onclick="window.app.logout()" class="hidden px-3 py-2 rounded-xl bg-slate-900 hover:bg-red-600/20 text-slate-300 hover:text-red-400 border border-white/10 text-xs font-bold transition flex items-center gap-1" title="خروج از حساب">
+          <i data-lucide="log-out" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">خروج</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl bg-slate-900 border border-white/10 text-slate-300">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER MENU -->
+  <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md">
+    <div class="w-72 bg-slate-950 h-full p-6 flex flex-col justify-between border-l border-white/10">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <img src="assets/img/logo.jpg" alt="Logo" class="w-9 h-9 rounded-full border border-red-500">
+            <span class="font-black text-sm text-white">ریمپ ریس لاین</span>
+          </div>
+          <button id="close-mobile-drawer" class="p-2 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <nav class="flex flex-col gap-4 mt-6 text-sm font-semibold">
+          <a href="javascript:void(0)" onclick="window.app.navigateTo('home'); document.getElementById('mobile-drawer').classList.add('hidden')" class="text-slate-200 hover:text-red-400 py-1" data-i18n="nav_home">صفحه اصلی</a>
+          <a href="javascript:void(0)" onclick="window.app.navigateTo('calculator'); document.getElementById('mobile-drawer').classList.add('hidden')" class="text-slate-200 hover:text-red-400 py-1" data-i18n="nav_calculator">محاسبه‌گر توان داینو</a>
+          <a href="#services-section" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="text-slate-200 hover:text-red-400 py-1" data-i18n="nav_services">خدمات ریمپ</a>
+          <a href="javascript:void(0)" onclick="window.app.navigateTo('booking'); document.getElementById('mobile-drawer').classList.add('hidden')" class="text-red-400 font-bold py-1" data-i18n="nav_booking">رزرو نوبت داینو (بیعانه ۱M)</a>
+          <a href="javascript:void(0)" onclick="window.app.navigateTo('shop'); document.getElementById('mobile-drawer').classList.add('hidden')" class="text-slate-200 hover:text-red-400 py-1" data-i18n="nav_shop">فروشگاه لوازم و مپ</a>
+          <a href="#projects-section" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="text-slate-200 hover:text-red-400 py-1" data-i18n="nav_projects">پروژه‌های داینو</a>
+          <a href="#location-section" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="text-slate-200 hover:text-red-400 py-1">📍 آدرس و نقشه</a>
+          <a href="javascript:void(0)" id="mobile-admin-link" onclick="window.app.navigateTo('admin'); document.getElementById('mobile-drawer').classList.add('hidden')" class="hidden text-amber-400 font-bold py-1">
+            🛡️ پنل مدیریت ریس‌لاین
+          </a>
+          <!-- Mobile Logout Link -->
+          <a href="javascript:void(0)" id="mobile-logout-link" onclick="window.app.logout(); document.getElementById('mobile-drawer').classList.add('hidden')" class="hidden text-red-400 font-bold py-1 flex items-center gap-2 border-t border-white/10 pt-3">
+            <i data-lucide="log-out" class="w-4 h-4"></i> خروج از حساب کاربری
+          </a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-white/10 text-xs text-slate-400 space-y-2">
+        <a href="tel:09187351735" class="flex items-center gap-2 text-white hover:text-red-400 font-mono font-bold">
+          <i data-lucide="phone" class="w-4 h-4 text-red-500"></i>
+          0918 735 1735
+        </a>
+        <div class="text-[11px] text-slate-400">
+          کرمانشاه، صد متر بعد از پل امام حسین به سمت پل لب آب
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN APP CONTAINER -->
+  <main class="flex-1">
+
+    <!-- 1. MAIN PUBLIC WEBSITE SECTIONS -->
+    <div id="main-sections-wrapper">
+      
+      <!-- HERO SECTION -->
+      <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Left Content -->
+            <div class="lg:col-span-7 space-y-6 text-right">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-600/10 border border-red-500/30 text-red-400 text-xs font-bold">
+                🔥 مرکز تخصصی ریمپ و کالیبراسیون داینو ریس لاین - کرمانشاه
+              </div>
+
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
+                نهایت قدرت و شتاب در <br><span class="text-red-500 font-black">مرکز تخصصی ریمپ ریس لاین</span>
+              </h1>
+
+              <p class="text-sm md:text-base text-slate-300 leading-relaxed max-w-2xl">
+                کالیبراسیون دقیق نرم‌افزاری انواع خودروهای ایرانی، چینی و وارداتی روی داینامومتر در کرمانشاه. افزایش چشمگیر شتاب، حذف تاخیر پدال گاز، کاهش دمای آب و مصرف سوخت با ضمانت کتبی.
+              </p>
+
+              <!-- Address & Phone Quick Strip -->
+              <div class="p-4 rounded-2xl bg-slate-900/80 border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+                <div class="flex items-center gap-2 text-slate-300">
+                  <i data-lucide="map-pin" class="w-4 h-4 text-red-500 flex-shrink-0"></i>
+                  <span>کرمانشاه، صد متر بعد از پل امام حسین به سمت پل لب آب</span>
+                </div>
+                <a href="tel:09187351735" class="flex items-center gap-1.5 font-mono text-amber-400 font-bold hover:underline self-end sm:self-center">
+                  <i data-lucide="phone" class="w-3.5 h-3.5"></i> 0918 735 1735
+                </a>
+              </div>
+
+              <!-- Hero CTAs -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                <button onclick="window.app.navigateTo('calculator')" class="btn-racing px-7 py-4 bg-red-600 hover:bg-red-700 text-white font-black text-sm rounded-2xl transition flex items-center justify-center gap-2 shadow-xl shadow-red-600/40">
+                  <i data-lucide="gauge" class="w-5 h-5"></i>
+                  <span data-i18n="hero_btn_calc">تست و محاسبه توان خودروی شما</span>
+                </button>
+
+                <button onclick="window.app.navigateTo('booking')" class="px-7 py-4 bg-slate-900/90 hover:bg-slate-800 border border-white/20 text-white font-bold text-sm rounded-2xl transition flex items-center justify-center gap-2">
+                  <i data-lucide="calendar" class="w-5 h-5 text-amber-400"></i>
+                  <span data-i18n="hero_btn_book">رزرو نوبت داینو (بیعانه ۱M)</span>
+                </button>
+              </div>
+
+              <!-- Key Trust Stats -->
+              <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/10">
+                <div>
+                  <div class="text-xl md:text-2xl font-black text-white font-racing">+۳۵۰۰</div>
+                  <div class="text-xs text-slate-400 mt-0.5">خودروی کالیبره شده</div>
+                </div>
+                <div>
+                  <div class="text-xl md:text-2xl font-black text-emerald-400 font-racing">۹۹.۴٪</div>
+                  <div class="text-xs text-slate-400 mt-0.5">رضایت مشتریان</div>
+                </div>
+                <div>
+                  <div class="text-xl md:text-2xl font-black text-amber-400 font-racing">۳۰ روز</div>
+                  <div class="text-xs text-slate-400 mt-0.5">ضمانت بازگشت وجه</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Hero Right Visual Card -->
+            <div class="lg:col-span-5 relative">
+              <div class="glass-panel p-6 rounded-3xl border border-white/10 relative overflow-hidden shadow-2xl">
+                
+                <!-- Logo & Instagram Handle Tag -->
+                <div class="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
+                  <div class="flex items-center gap-3">
+                    <img src="assets/img/logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-red-500 shadow-md">
+                    <div>
+                      <div class="font-bold text-white text-xs">مرکز تخصصی ریمپ ریس لاین</div>
+                      <a href="https://instagram.com/raceline_remap" target="_blank" class="text-red-400 text-xs font-mono font-bold hover:underline">@raceline_remap</a>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-green-500/20 text-green-400">
+                    🟢 داینو فعال
+                  </span>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden aspect-video bg-slate-900 border border-white/10 mb-4">
+                  <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Raceline Dyno Tuning" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                    <div>
+                      <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-red-600 text-white">LIVE DYNO LOG</span>
+                      <div class="text-sm font-black text-white mt-1 font-racing">Dena Plus Turbo EF7: 210 HP / 310 Nm</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dyno Live Meters -->
+                <div class="space-y-3">
+                  <div>
+                    <div class="flex justify-between text-xs font-semibold mb-1">
+                      <span class="text-slate-300">توان خروجی چرخ (Wheel HP)</span>
+                      <span class="text-red-400 font-racing font-bold">210 HP (+40%)</span>
+                    </div>
+                    <div class="w-full h-2.5 rounded-full bg-slate-800 overflow-hidden">
+                      <div class="h-full bg-gradient-to-r from-red-600 to-amber-500 rounded-full animate-rev"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between text-xs font-semibold mb-1">
+                      <span class="text-slate-300">گشتاور موتور (Torque)</span>
+                      <span class="text-amber-400 font-racing font-bold">310 Nm (+44%)</span>
+                    </div>
+                    <div class="w-full h-2.5 rounded-full bg-slate-800 overflow-hidden">
+                      <div class="h-full bg-gradient-to-r from-amber-500 to-emerald-400 rounded-full w-[82%]"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. INTERACTIVE DYNO & GAIN CALCULATOR SECTION -->
+      <section id="calculator-section" class="py-20 bg-slate-950/60 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-black tracking-widest text-red-500 uppercase">ONLINE DYNO SIMULATOR</span>
+            <h2 class="text-2xl md:text-4xl font-black text-white mt-2" data-i18n="calc_title">
+              محاسبه‌گر آنلاین افزایش توان و گشتاور
+            </h2>
+            <p class="text-xs md:text-sm text-slate-400 mt-3 leading-relaxed" data-i18n="calc_subtitle">
+              مدل خودروی خود را انتخاب کنید تا توان فابریک و افزایش قدرت پس از ریمپ استیج ۱ و ۲ را به همراه نمودار داینو مشاهده کنید.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Controls & Selector -->
+            <div class="lg:col-span-5 space-y-6">
+              
+              <div class="glass-panel p-6 rounded-3xl border border-white/10 space-y-5">
+                
+                <!-- Car Selector -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-2" data-i18n="calc_select_car">
+                    انتخاب خودرو و موتور:
+                  </label>
+                  <select id="calc-car-select" onchange="window.app.onCarChange(this.value)" 
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white font-medium focus:outline-none focus:border-red-500 transition">
+                    <!-- Populated dynamically -->
+                  </select>
+                </div>
+
+                <!-- Stage Switcher -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-2" data-i18n="calc_select_stage">
+                    انتخاب استیج تیونینگ:
+                  </label>
+                  <div class="grid grid-cols-2 gap-3">
+                    <button onclick="window.app.onStageChange(1)" data-stage="1"
+                      class="stage-btn py-3 px-4 rounded-xl text-xs font-bold border transition bg-red-600 text-white border-red-500 shadow-lg shadow-red-600/30">
+                      ⚡ استیج ۱ (نرم‌افزار فابریک)
+                    </button>
+                    <button onclick="window.app.onStageChange(2)" data-stage="2"
+                      class="stage-btn py-3 px-4 rounded-xl text-xs font-bold border transition bg-slate-900/80 text-slate-400 border-white/10 hover:text-white">
+                      🔥 استیج ۲ (داون‌پایپ + مکش)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Output Stats Comparison Cards -->
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                  <div class="p-4 rounded-2xl bg-slate-900/80 border border-white/10">
+                    <span class="text-[11px] text-slate-400" data-i18n="calc_stock_power">توان استاندارد:</span>
+                    <div id="calc-stock-hp" class="text-xl font-black text-slate-300 font-racing mt-1">150 HP</div>
+                  </div>
+
+                  <div class="p-4 rounded-2xl bg-red-950/40 border border-red-500/30">
+                    <span class="text-[11px] text-red-300 font-bold" data-i18n="calc_tuned_power">توان ریمپ ریس‌لاین:</span>
+                    <div id="calc-tuned-hp" class="text-xl font-black text-red-400 font-racing mt-1">185 HP</div>
+                  </div>
+                </div>
+
+                <!-- Net Gains Highlight -->
+                <div class="p-4 rounded-2xl bg-gradient-to-r from-red-900/50 to-amber-900/50 border border-red-500/30 flex items-center justify-between">
+                  <div>
+                    <span class="text-xs text-amber-300 font-bold" data-i18n="calc_gain">افزایش خالص اسب بخار:</span>
+                    <div id="calc-hp-gain" class="text-lg font-black text-white font-racing mt-0.5">+35 HP (+23%)</div>
+                  </div>
+                  <div class="text-left">
+                    <span class="text-xs text-amber-300 font-bold" data-i18n="calc_torque_gain">افزایش خالص گشتاور:</span>
+                    <div id="calc-torque-gain" class="text-lg font-black text-amber-400 font-racing mt-0.5">+55 Nm</div>
+                  </div>
+                </div>
+
+                <!-- Tuning notes -->
+                <div>
+                  <span class="text-xs font-bold text-slate-400" data-i18n="calc_notes">تغییرات و نتایج ریمپ روی این خودرو:</span>
+                  <p id="calc-car-notes" class="text-xs text-slate-300 mt-1 leading-relaxed bg-slate-900/50 p-3 rounded-xl border border-white/5">
+                    رفع تاخیر توربو، کاهش دمای آب، حذف ناک، بهبود شتاب ۰ تا ۱۰۰ تا ۲.۵ ثانیه.
+                  </p>
+                </div>
+
+                <button onclick="window.app.navigateTo('booking')" class="w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-2">
+                  <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                  رزرو نوبت برای این خودرو (با ۱,۰۰۰,۰۰۰ تومان بیعانه)
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Dyno Chart Canvas View -->
+            <div class="lg:col-span-7">
+              <div class="glass-panel p-6 rounded-3xl border border-white/10">
+                
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 mb-4 border-b border-white/10">
+                  <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
+                    <h3 class="font-bold text-white text-sm">منحنی داینو (اسب بخار و گشتاور بر حسب دور موتور)</h3>
+                  </div>
+                  
+                  <!-- Legend -->
+                  <div class="flex items-center gap-4 text-[11px] font-semibold">
+                    <span class="flex items-center gap-1.5 text-slate-400">
+                      <span class="w-3 h-0.5 bg-slate-400 border-dashed"></span> فابریک
+                    </span>
+                    <span class="flex items-center gap-1.5 text-red-400">
+                      <span class="w-3 h-1 bg-red-500 rounded"></span> توان ریمپ (HP)
+                    </span>
+                    <span class="flex items-center gap-1.5 text-amber-400">
+                      <span class="w-3 h-1 bg-amber-500 rounded"></span> گشتاور (Nm)
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Canvas -->
+                <div class="dyno-canvas-container">
+                  <canvas id="dyno-canvas"></canvas>
+                </div>
+
+                <!-- Car Preview Photo -->
+                <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img id="calc-car-image" src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Selected Car" class="w-14 h-14 rounded-xl object-cover border border-white/10 bg-slate-900">
+                    <div>
+                      <span class="text-xs font-bold text-white">کالیبراسیون و لاگ‌گیری سنسورها</span>
+                      <div class="text-[11px] text-slate-400">تنظیم دقیق نسبت سوخت و هوا (AFR) و زمان جرقه</div>
+                    </div>
+                  </div>
+
+                  <span class="px-3 py-1.5 rounded-xl bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20">
+                    تست سلامت موتور قبل از ریمپ ✅
+                  </span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. SERVICES SECTION -->
+      <section id="services-section" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-xs font-black tracking-widest text-red-500 uppercase">OUR SERVICES</span>
+            <h2 class="text-2xl md:text-4xl font-black text-white mt-2" data-i18n="services_title">
+              پکیج‌های تخصصی تیونینگ و کالیبراسیون
+            </h2>
+            <p class="text-xs md:text-sm text-slate-400 mt-3" data-i18n="services_subtitle">
+              کلیه خدمات با نرم‌افزارهای اورجینال اروپایی و لاگ‌گیری دقیق سنسورها انجام می‌شود.
+            </p>
+          </div>
+
+          <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Populated dynamically -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 4. DEDICATED BOOKING SECTION (WITH 1,000,000 TOMAN DEPOSIT & ZARINPAL) -->
+      <section id="booking-section" class="py-20 bg-slate-950/80 border-y border-white/10 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="glass-panel p-8 md:p-12 rounded-3xl border border-red-500/30 relative overflow-hidden shadow-2xl">
+            
+            <!-- Red Top Accent Bar -->
+            <div class="absolute top-0 right-0 left-0 h-2 bg-gradient-to-r from-red-600 via-amber-500 to-red-600"></div>
+
+            <div class="text-center mb-10">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold mb-3">
+                <i data-lucide="shield-check" class="w-4 h-4"></i> درگاه پرداخت امن شاپرک و زرین‌پال
+              </div>
+              <h2 class="text-2xl md:text-3xl font-black text-white" data-i18n="booking_title">
+                رزرو نوبت ریمپ و تست داینو
+              </h2>
+              <p class="text-xs md:text-sm text-slate-400 mt-2 max-w-xl mx-auto leading-relaxed" data-i18n="booking_subtitle">
+                جهت رزرو قطعی نوبت و تخصیص تایم داینامومتر، پرداخت مبلغ ۱,۰۰۰,۰۰۰ تومان بیعانه الزامی است که از هزینه نهایی کسر خواهد شد.
+              </p>
+            </div>
+
+            <!-- Booking Form -->
+            <form onsubmit="window.app.handleBookingFormSubmit(event)" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5" data-i18n="booking_form_name">نام و نام خانوادگی:</label>
+                  <input type="text" id="book-name" required placeholder="مثال: علی رضایی" 
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5" data-i18n="booking_form_phone">شماره تماس همراه:</label>
+                  <input type="tel" id="book-phone" required placeholder="09187351735" dir="ltr"
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 text-right focus:outline-none focus:border-red-500 transition font-mono">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5" data-i18n="booking_form_car">مدل خودرو و سال ساخت:</label>
+                  <input type="text" id="book-car" required placeholder="مثال: دنا پلاس توربو ۱۴۰۲" 
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5" data-i18n="booking_form_service">نوع خدمات مورد نیاز:</label>
+                  <select id="booking-service-select" class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white font-medium focus:outline-none focus:border-red-500 transition">
+                    <option value="ریمپ استیج ۱ (نرم‌افزاری)">ریمپ استیج ۱ (نرم‌افزاری)</option>
+                    <option value="ریمپ استیج ۲ (داون‌پایپ + کیت مکش)">ریمپ استیج ۲ (داون‌پایپ + کیت مکش)</option>
+                    <option value="پاپ اند بنگ و بک‌فایر (Pop & Bang)">پاپ اند بنگ و بک‌فایر (Pop & Bang)</option>
+                    <option value="تیونینگ و تست توان روی داینامومتر">تیونینگ و تست توان روی داینامومتر</option>
+                    <option value="حذف نرم‌افزاری سنسور اکسیژن ۲ و کاتالیزور">حذف نرم‌افزاری سنسور اکسیژن ۲ و کاتالیزور</option>
+                    <option value="کات‌آف رگباری و هاردکات (Hardcut)">کات‌آف رگباری و هاردکات (Hardcut)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5" data-i18n="booking_form_date">تاریخ مورد نظر:</label>
+                  <input type="text" id="book-date" required placeholder="مثال: 1403/06/20" dir="ltr"
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 text-right focus:outline-none focus:border-red-500 transition font-mono">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5" data-i18n="booking_form_time">ساعت مراجعه:</label>
+                  <select id="book-time" class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white font-medium focus:outline-none focus:border-red-500 transition">
+                    <option value="10:00 صبح">10:00 صبح</option>
+                    <option value="12:00 ظهر">12:00 ظهر</option>
+                    <option value="15:00 بعد از ظهر">15:00 بعد از ظهر</option>
+                    <option value="17:00 عصر">17:00 عصر</option>
+                    <option value="19:00 شب">19:00 شب</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <!-- Deposit Notice & Zarinpal Amount Badge -->
+              <div class="p-5 rounded-2xl bg-zarinpal border border-yellow-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-yellow-400/20 text-yellow-400 flex items-center justify-center font-bold text-xl flex-shrink-0">
+                    💳
+                  </div>
+                  <div>
+                    <span class="text-xs text-yellow-400 font-bold" data-i18n="booking_deposit_label">مبلغ بیعانه رزرو نوبت:</span>
+                    <div class="text-lg font-black text-white font-racing">۱,۰۰۰,۰۰۰ تومان</div>
+                    <div class="text-[11px] text-slate-300 mt-0.5">اتصال مستقیم به درگاه پرداخت رسمی زرین‌پال</div>
+                  </div>
+                </div>
+
+                <div class="text-xs text-slate-300 bg-black/40 px-3 py-2 rounded-xl border border-white/10">
+                  🛡️ بازگشت ۱۰۰٪ وجه در صورت عدم رضایت
+                </div>
+              </div>
+
+              <!-- Submit Pay Button -->
+              <button type="submit" class="btn-racing w-full py-4 bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:opacity-95 text-white font-black text-base rounded-2xl transition flex items-center justify-center gap-2 shadow-xl shadow-red-600/30">
+                <i data-lucide="lock" class="w-5 h-5"></i>
+                <span data-i18n="booking_btn_pay">پرداخت ۱,۰۰۰,۰۰۰ تومان بیعانه و ثبت نوبت در زرین‌پال 💳</span>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ONLINE STORE SECTION -->
+      <section id="shop-section" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-xs font-black tracking-widest text-red-500 uppercase">RACELINE PERFORMANCE STORE</span>
+            <h2 class="text-2xl md:text-4xl font-black text-white mt-2" data-i18n="shop_title">
+              فروشگاه تخصصی لوازم تیونینگ و مپ‌های نرم‌افزاری
+            </h2>
+            <p class="text-xs md:text-sm text-slate-400 mt-3" data-i18n="shop_subtitle">
+              خرید مستقیم قطعات اورجینال، داون‌پایپ‌های استیل، کیت‌های مکش و پکیج‌های نرم‌افزاری ریمپ.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex items-center justify-center gap-2 mb-10 flex-wrap">
+            <button onclick="window.app.filterShop('all')" data-cat="all"
+              class="shop-cat-btn px-4 py-2 rounded-xl text-xs font-bold border transition bg-red-600 text-white border-red-500" data-i18n="shop_tab_all">
+              همه محصولات
+            </button>
+            <button onclick="window.app.filterShop('software')" data-cat="software"
+              class="shop-cat-btn px-4 py-2 rounded-xl text-xs font-bold border transition bg-slate-900/80 text-slate-400 border-white/10 hover:text-white" data-i18n="shop_tab_software">
+              فایل و مپ
+            </button>
+            <button onclick="window.app.filterShop('hardware')" data-cat="hardware"
+              class="shop-cat-btn px-4 py-2 rounded-xl text-xs font-bold border transition bg-slate-900/80 text-slate-400 border-white/10 hover:text-white" data-i18n="shop_tab_hardware">
+              قطعات تقویتی
+            </button>
+            <button onclick="window.app.filterShop('tools')" data-cat="tools"
+              class="shop-cat-btn px-4 py-2 rounded-xl text-xs font-bold border transition bg-slate-900/80 text-slate-400 border-white/10 hover:text-white" data-i18n="shop_tab_tools">
+              تجهیزات دیاگ
+            </button>
+            <button onclick="window.app.filterShop('merch')" data-cat="merch"
+              class="shop-cat-btn px-4 py-2 rounded-xl text-xs font-bold border transition bg-slate-900/80 text-slate-400 border-white/10 hover:text-white" data-i18n="shop_tab_merch">
+              اکسسوری و لباس
+            </button>
+          </div>
+
+          <!-- Products Grid -->
+          <div id="shop-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Populated dynamically -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 6. PROJECTS SHOWCASE SECTION -->
+      <section id="projects-section" class="py-20 bg-slate-950/60 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-xs font-black tracking-widest text-red-500 uppercase">PROVEN DYNO RESULTS</span>
+            <h2 class="text-2xl md:text-4xl font-black text-white mt-2" data-i18n="projects_title">
+              گالری پروژه‌ها و نتایج داینو
+            </h2>
+            <p class="text-xs md:text-sm text-slate-400 mt-3" data-i18n="projects_subtitle">
+              تعدادی از جدیدترین خودروهای کالیبره شده در مرکز ریس‌لاین ریمپ.
+            </p>
+          </div>
+
+          <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Populated dynamically -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 7. LOCATION & INTERACTIVE GOOGLE MAP SECTION -->
+      <section id="location-section" class="py-20 bg-slate-950 border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-black tracking-widest text-red-500 uppercase">LOCATION & DIRECTIONS</span>
+            <h2 class="text-2xl md:text-4xl font-black text-white mt-2">
+              موقعیت مکانی و آدرس مرکز ریمپ
+            </h2>
+            <p class="text-xs md:text-sm text-slate-400 mt-3">
+              کرمانشاه، صد متر بعد از پل امام حسین به سمت پل لب آب
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Map Info Card -->
+            <div class="lg:col-span-4 glass-panel p-6 md:p-8 rounded-3xl border border-white/10 flex flex-col justify-between space-y-6">
+              <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-red-600/10 border border-red-500/30 flex items-center justify-center text-red-500">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-black text-white text-base">مرکز تخصصی ریمپ ریس لاین</h3>
+                    <span class="text-xs text-slate-400">کرمانشاه (غرب کشور)</span>
+                  </div>
+                </div>
+
+                <div class="space-y-4 text-xs text-slate-300 leading-relaxed">
+                  <div class="p-3.5 rounded-2xl bg-slate-900/80 border border-white/5 space-y-1">
+                    <div class="text-slate-400 text-[11px] font-bold">📍 آدرس دقیق:</div>
+                    <div class="text-white font-medium">کرمانشاه، صد متر بعد از پل امام حسین به سمت پل لب آب</div>
+                  </div>
+
+                  <div class="p-3.5 rounded-2xl bg-slate-900/80 border border-white/5 space-y-1">
+                    <div class="text-slate-400 text-[11px] font-bold">📞 شماره تماس و مشاوره ریمپ:</div>
+                    <a href="tel:09187351735" class="text-yellow-400 font-mono font-black text-sm hover:underline block">0918 735 1735</a>
+                  </div>
+
+                  <div class="p-3.5 rounded-2xl bg-slate-900/80 border border-white/5 space-y-1">
+                    <div class="text-slate-400 text-[11px] font-bold">⏰ ساعات کاری مرکز داینو:</div>
+                    <div class="text-emerald-400 font-bold">شنبه تا پنج‌شنبه: ۹:۰۰ صبح الی ۲۱:۰۰ شب</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Routing Links -->
+              <div class="space-y-2 pt-4 border-t border-white/10">
+                <a href="https://maps.google.com/?q=34.367185,47.101192" target="_blank" 
+                  class="btn-racing w-full py-3 bg-red-600 hover:bg-red-700 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-red-600/30">
+                  <i data-lucide="navigation" class="w-4 h-4"></i>
+                  مسیریابی مستقیم در گوگل مپ (Google Maps)
+                </a>
+
+                <a href="https://wa.me/989187351735?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A2%D8%AF%D8%B1%D8%B3%20%D9%88%20%D9%84%D9%88%DA%A9%DB%8C%D8%B4%D9%86%20%D9%85%D8%B1%DA%A9%D8%B2%20%D8%B1%D8%A7%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%D9%85" target="_blank"
+                  class="w-full py-2.5 bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 font-bold text-xs rounded-xl transition flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  دریافت لوکیشن در واتساپ
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Google Map Frame -->
+            <div class="lg:col-span-8 glass-panel p-2 rounded-3xl border border-white/10 overflow-hidden shadow-2xl relative min-h-[400px]">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1646.6717012735412!2d47.10119286840379!3d34.36718521541875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ffaf288d1fd4d0f%3A0x4a63ee276279b5e5!2sKermanshah%20Province%2C%20Kermanshah%2C%20Keshvari%20Blvd%2C%209482%2BRM5%2C%20Iran!5e0!3m2!1sen!2sde!4v1787523534577!5m2!1sen!2sde" 
+                width="100%" 
+                height="100%" 
+                style="border:0; min-height: 420px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                class="w-full h-full rounded-2xl">
+              </iframe>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 2. CUSTOMER PORTAL VIEW -->
+    <div id="portal-section-wrapper" class="hidden py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="portal-content-area">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+
+    <!-- 3. ADMIN MANAGEMENT PANEL VIEW -->
+    <div id="admin-section-wrapper" class="hidden py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="admin-content-area">
+        <!-- Rendered by admin.js -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SHOPPING CART SLIDE-OUT DRAWER -->
+  <div id="cart-drawer-backdrop" class="drawer-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex justify-end">
+    <div id="cart-drawer-panel" class="drawer-slide translate-off w-full max-w-md bg-slate-950 h-full p-6 flex flex-col justify-between border-l border-white/10 shadow-2xl">
+      
+      <!-- Drawer Header -->
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-red-500"></i>
+            <h3 class="font-bold text-white text-base" data-i18n="cart_title">سبد خرید شما</h3>
+          </div>
+          <button onclick="window.app.toggleCartDrawer(false)" class="p-2 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Cart Items List -->
+        <div id="cart-items-list" class="space-y-3 mt-4 max-h-[60vh] overflow-y-auto pr-1">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Drawer Footer & Checkout Options -->
+      <div class="pt-6 border-t border-white/10 space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-slate-400" data-i18n="cart_total">مبلغ کل قابل پرداخت:</span>
+          <span id="cart-total-amount" class="text-lg font-black text-white font-racing">۰ تومان</span>
+        </div>
+
+        <button onclick="window.app.checkoutCartWithZarinpal()" class="btn-racing w-full py-3.5 bg-gradient-to-r from-red-600 to-amber-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-red-600/30 flex items-center justify-center gap-2" data-i18n="cart_checkout_zp">
+          پرداخت آنلاین با زرین‌پال 💳
+        </button>
+
+        <button onclick="window.app.checkoutCartWithWhatsApp()" class="w-full py-3 bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 font-bold text-xs rounded-xl transition flex items-center justify-center gap-2" data-i18n="cart_checkout_wa">
+          ثبت و ارسال سفارش در واتساپ 📲
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ZARINPAL PAYMENT GATEWAY MODAL -->
+  <div id="zarinpal-payment-modal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-content-scale bg-slate-900 border border-yellow-500/40 w-full max-w-lg rounded-3xl p-6 sm:p-8 relative shadow-2xl overflow-hidden">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-4 mb-6 border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-yellow-400/20 text-yellow-400 flex items-center justify-center font-black text-lg">
+            ZP
+          </div>
+          <div>
+            <div class="text-sm font-black text-white">درگاه پرداخت اینترنتی زرین‌پال</div>
+            <div class="text-[10px] text-green-400 flex items-center gap-1 font-mono">
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+              zarinpal.com (SSL 256-bit Secure)
+            </div>
+          </div>
+        </div>
+        <button onclick="window.app.closeZarinpalModal()" class="p-1.5 text-slate-400 hover:text-white rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Step 1: Gateway Screen -->
+      <div id="zp-step-gateway" class="space-y-6">
+        
+        <div class="p-4 rounded-2xl bg-black/40 border border-white/10 text-center">
+          <span class="text-xs text-slate-400" id="zp-modal-title">پرداخت بیعانه رزرو نوبت ریمپ</span>
+          <div id="zp-modal-amount" class="text-3xl font-black text-yellow-400 font-racing my-2">۱,۰۰۰,۰۰۰ تومان</div>
+          <div class="text-[11px] text-slate-400">شناسه درخواست: <span id="zp-modal-ref" class="font-mono text-white">BOOK-8492</span></div>
+        </div>
+
+        <!-- Simulated Card Inputs -->
+        <div class="space-y-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">شماره کارت بانکی عضو شتاب:</label>
+            <input type="text" value="6037 - 9919 - 8822 - 1045" dir="ltr" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-yellow-400 font-mono text-center focus:outline-none" readonly>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">رمز پویا / دوم:</label>
+              <input type="password" value="••••••" dir="ltr" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white font-mono text-center focus:outline-none" readonly>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">CVV2:</label>
+              <input type="text" value="734" dir="ltr" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white font-mono text-center focus:outline-none" readonly>
+            </div>
+          </div>
+        </div>
+
+        <button id="zp-pay-submit-btn" onclick="window.app.processZarinpalPaymentSimulation()" 
+          class="btn-racing w-full py-4 bg-gradient-to-r from-yellow-500 to-amber-600 hover:opacity-95 text-black font-black text-sm rounded-2xl transition flex items-center justify-center gap-2 shadow-xl shadow-yellow-500/20">
+          پرداخت امن با کلیه کارت‌های عضو شتاب 💳
+        </button>
+
+      </div>
+
+      <!-- Step 2: Payment Success Screen -->
+      <div id="zp-step-success" class="hidden text-center py-4 space-y-5">
+        <div class="w-16 h-16 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 flex items-center justify-center mx-auto text-2xl font-black">
+          ✓
+        </div>
+        <div>
+          <h4 class="text-xl font-black text-white">تراکنش با موفقیت انجام شد!</h4>
+          <p class="text-xs text-slate-300 mt-1">نوبت ریمپ و تست داینو شما در سیستم ثبت و تایید گردید.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-black/40 border border-white/10 text-xs text-slate-300 space-y-2 text-right">
+          <div class="flex justify-between"><span>کد پیگیری زرین‌پال:</span> <b id="zp-success-ref-id" class="font-mono text-yellow-400">ZP-94821048</b></div>
+          <div class="flex justify-between"><span>وضعیت:</span> <b class="text-green-400">موفق (کارت به حساب ریس‌لاین)</b></div>
+          <div class="flex justify-between"><span>پیامک تایید:</span> <b>به شماره همراه شما ارسال شد</b></div>
+        </div>
+
+        <div class="flex gap-3">
+          <button onclick="window.app.closeZarinpalModal(); window.app.navigateTo('portal')" class="flex-1 py-3 bg-red-600 text-white font-bold text-xs rounded-xl">
+            مشاهده نوبت در حساب کاربری
+          </button>
+          <button onclick="window.app.closeZarinpalModal()" class="px-4 py-3 bg-slate-800 text-slate-300 font-bold text-xs rounded-xl">
+            بستن
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LOGIN / REGISTER AUTH MODAL -->
+  <div id="auth-modal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-content-scale bg-slate-900 border border-white/15 w-full max-w-md rounded-3xl p-6 sm:p-8 relative shadow-2xl">
+      
+      <div class="flex items-center justify-between pb-4 mb-6 border-b border-white/10">
+        <!-- Auth Tabs -->
+        <div class="flex items-center gap-4">
+          <button id="tab-btn-login" onclick="window.app.switchAuthTab('login')" class="font-bold text-base pb-1 border-b-2 text-red-500 border-red-500 transition">
+            ورود به حساب
+          </button>
+          <button id="tab-btn-register" onclick="window.app.switchAuthTab('register')" class="font-bold text-base pb-1 border-b-2 text-slate-400 border-transparent transition">
+            عضویت جدید
+          </button>
+        </div>
+        <button onclick="window.app.closeAuthModal()" class="p-1.5 text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Quick Demo Account Pills -->
+      <div class="mb-5 p-3 rounded-xl bg-slate-950/70 border border-white/5 flex items-center justify-between text-xs">
+        <span class="text-slate-400">ورود سریع تستی:</span>
+        <div class="flex gap-2">
+          <button onclick="window.app.quickDemoLogin('admin')" class="px-2.5 py-1 bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white font-bold rounded-lg transition">
+            👑 ورود ادمین
+          </button>
+          <button onclick="window.app.quickDemoLogin('customer')" class="px-2.5 py-1 bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold rounded-lg transition">
+            👤 ورود مشتری
+          </button>
+        </div>
+      </div>
+
+      <!-- Form: Login -->
+      <form id="auth-login-form" onsubmit="window.app.handleLogin(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">نام کاربری:</label>
+          <input type="text" id="login-username" required placeholder="admin یا نام کاربری شما" 
+            class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500 transition">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">رمز عبور:</label>
+          <input type="password" id="login-password" required placeholder="••••••••" 
+            class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500 transition">
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold text-sm rounded-xl transition shadow-lg shadow-red-600/30">
+          ورود به پنل
+        </button>
+      </form>
+
+      <!-- Form: Register -->
+      <form id="auth-register-form" onsubmit="window.app.handleRegister(event)" class="hidden space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">نام و نام خانوادگی:</label>
+          <input type="text" id="reg-name" required placeholder="مثال: سینا محمدی" 
+            class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500 transition">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">نام کاربری:</label>
+          <input type="text" id="reg-username" required placeholder="مثال: sina_tuner" 
+            class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500 transition">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">شماره همراه:</label>
+          <input type="tel" id="reg-phone" placeholder="09187351735" dir="ltr"
+            class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white text-right focus:outline-none focus:border-red-500 transition font-mono">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">رمز عبور:</label>
+          <input type="password" id="reg-password" required placeholder="حداقل ۶ کاراکتر" 
+            class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500 transition">
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold text-sm rounded-xl transition shadow-lg shadow-red-600/30">
+          ایجاد حساب کاربری
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- FLOATING FAST CALL & WHATSAPP TOGGLE (BOTTOM RIGHT) -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 select-none">
+    
+    <!-- Expanded Speed-Dial Action Buttons -->
+    <div id="fast-call-menu" class="hidden flex-col items-end gap-2.5 transition-all duration-300">
+      
+      <!-- Direct Call Option -->
+      <a href="tel:09187351735" class="flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-slate-900/95 border border-red-500/40 text-white shadow-2xl hover:bg-red-600 transition group backdrop-blur-md">
+        <span class="text-xs font-bold font-mono group-hover:text-white">تماس فوری: 09187351735</span>
+        <div class="w-8 h-8 rounded-xl bg-red-600 group-hover:bg-white text-white group-hover:text-red-600 flex items-center justify-center flex-shrink-0 transition">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+        </div>
+      </a>
+
+      <!-- WhatsApp Chat Option -->
+      <a href="https://wa.me/989187351735?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%AC%D9%87%D8%AA%20%D8%B1%DB%8C%D9%85%D9%BE%20%D9%88%20%D8%AA%DB%8C%D9%88%D9%86%DB%8C%D9%86%DA%AF%20%D8%AE%D9%88%D8%AF%D8%B1%D9%88%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%D8%AF%D9%85" target="_blank" class="flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-slate-900/95 border border-emerald-500/40 text-white shadow-2xl hover:bg-emerald-600 transition group backdrop-blur-md">
+        <span class="text-xs font-bold group-hover:text-white">گفتگو در واتساپ</span>
+        <div class="w-8 h-8 rounded-xl bg-emerald-600 group-hover:bg-white text-white group-hover:text-emerald-600 flex items-center justify-center flex-shrink-0 transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+        </div>
+      </a>
+
+      <!-- Instagram Option -->
+      <a href="https://instagram.com/raceline_remap" target="_blank" class="flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-slate-900/95 border border-pink-500/40 text-white shadow-2xl hover:bg-pink-600 transition group backdrop-blur-md">
+        <span class="text-xs font-bold font-mono group-hover:text-white">@raceline_remap</span>
+        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 text-white flex items-center justify-center flex-shrink-0">
+          <i data-lucide="instagram" class="w-4 h-4"></i>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Main Floating Pulse Button -->
+    <button onclick="document.getElementById('fast-call-menu').classList.toggle('hidden')" 
+      class="btn-racing relative w-14 h-14 rounded-full bg-gradient-to-tr from-red-600 via-red-500 to-amber-500 text-white shadow-2xl shadow-red-600/50 flex items-center justify-center hover:scale-110 active:scale-95 transition group border-2 border-white/20">
+      
+      <!-- Pulsing Ping Effect -->
+      <span class="absolute -inset-1 rounded-full bg-red-500/40 animate-ping pointer-events-none"></span>
+      
+      <i data-lucide="phone-call" class="w-6 h-6 group-hover:rotate-12 transition"></i>
+    </button>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-white/10 pt-16 pb-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand About -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/img/logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-red-500 shadow-md">
+            <div>
+              <span class="font-black text-base text-white">مرکز تخصصی ریمپ ریس لاین</span>
+              <div class="text-[10px] text-red-400 font-racing">RACELINE REMAP</div>
+            </div>
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-md">
+            مرکز تخصصی تیونینگ و کالیبراسیون داینو خودرو ریس لاین. ارائه خدمات فوق تخصصی ریمپ ایسیو، تیونینگ داینامومتر، حذف سنسورهای آلایندگی، پاپ اند بنگ و فروش قطعات تقویتی در کرمانشاه.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com/raceline_remap" target="_blank" class="p-2.5 rounded-xl bg-slate-900 hover:bg-red-600 text-slate-300 hover:text-white border border-white/10 transition flex items-center gap-2">
+              <span>📸 اینستاگرام:</span>
+              <span class="font-bold text-white font-mono">@raceline_remap</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm" data-i18n="footer_quick_links">دسترسی سریع</h4>
+          <ul class="space-y-2">
+            <li><a href="javascript:void(0)" onclick="window.app.navigateTo('calculator')" class="hover:text-red-400 transition" data-i18n="nav_calculator">محاسبه‌گر توان داینو</a></li>
+            <li><a href="javascript:void(0)" onclick="window.app.navigateTo('booking')" class="hover:text-red-400 transition" data-i18n="nav_booking">رزرو نوبت با بیعانه ۱M</a></li>
+            <li><a href="javascript:void(0)" onclick="window.app.navigateTo('shop')" class="hover:text-red-400 transition" data-i18n="nav_shop">فروشگاه قطعات و مپ</a></li>
+            <li><a href="#projects-section" class="hover:text-red-400 transition" data-i18n="nav_projects">گالری پروژه‌ها</a></li>
+            <li><a href="#location-section" class="hover:text-red-400 transition">موقعیت روی نقشه</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm">ارتباط و آدرس مرکز</h4>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-red-500 flex-shrink-0"></i>
+              <a href="tel:09187351735" class="font-mono text-white hover:text-amber-400 font-bold">0918 735 1735</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-red-500 mt-1 flex-shrink-0"></i>
+              <span class="text-slate-300">کرمانشاه، صد متر بعد از پل امام حسین به سمت پل لب آب</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-amber-500 flex-shrink-0"></i>
+              <span>شنبه تا پنج‌شنبه: ۹:۰۰ الی ۲۱:۰۰</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <span>تمامی حقوق برای مرکز تخصصی ریمپ ریس لاین (Raceline Remap) محفوظ است.</span>
+        <span>Hosted 100% Free on GitHub Pages / Vercel</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/admin.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
