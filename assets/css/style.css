@@ -1,81 +1,100 @@
 /* ==========================================================================
-   Raceline Remap - Main Stylesheet
-   Dark Automotive & Cyber Racing Aesthetic
+   مرکز تخصصی ریمپ ریس لاین | Raceline Remap
+   Complete Standalone Responsive Dark Automotive Stylesheet
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --font-fa: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-en: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-fa: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif;
+  --font-en: 'Plus Jakarta Sans', sans-serif;
   --font-racing: 'Orbitron', monospace;
-  
-  --bg-main: #0a0b0e;
-  --bg-card: #12141c;
-  --bg-card-hover: #191c28;
-  --bg-glass: rgba(18, 20, 28, 0.75);
-  
-  --accent-red: #ef4444;
-  --accent-red-glow: rgba(239, 68, 68, 0.35);
+
+  --bg-dark: #07080b;
+  --bg-surface: #0e1017;
+  --bg-card: #141722;
+  --bg-card-hover: #1c2030;
+  --bg-glass: rgba(20, 23, 34, 0.88);
+
+  --accent-red: #e11d48;
+  --accent-red-hover: #be123c;
+  --accent-red-glow: rgba(225, 29, 72, 0.4);
   --accent-amber: #f59e0b;
-  --accent-amber-glow: rgba(245, 158, 11, 0.3);
-  --accent-cyan: #06b6d4;
   --accent-green: #10b981;
-  
-  --border-dim: rgba(255, 255, 255, 0.08);
-  --border-highlight: rgba(239, 68, 68, 0.4);
-  
+
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(225, 29, 72, 0.5);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
 }
 
-/* Base resets & typography */
-* {
+/* Reset & Global */
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  background-color: var(--bg-dark);
 }
 
 body {
   font-family: var(--font-fa);
-  background-color: var(--bg-main);
+  background-color: var(--bg-dark);
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.65;
+  direction: rtl;
+  text-align: right;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
 body[dir="ltr"] {
   font-family: var(--font-en);
+  direction: ltr;
+  text-align: left;
 }
 
 .font-racing {
   font-family: var(--font-racing);
 }
 
-/* Carbon & Tech Background Patterns */
-.bg-carbon {
-  background-color: #0b0c10;
-  background-image: 
-    radial-gradient(circle at 50% 0%, rgba(239, 68, 68, 0.15), transparent 45%),
-    radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.08), transparent 30%),
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
+button, input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Carbon & Background Texture */
+.bg-carbon {
+  background-color: #07080b;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(225, 29, 72, 0.14), transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.06), transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+}
+
+/* Glass Panels */
 .glass-panel {
   background: var(--bg-glass);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-dim);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
 }
 
 .glass-panel-hover {
@@ -84,40 +103,70 @@ body[dir="ltr"] {
 
 .glass-panel-hover:hover {
   background: var(--bg-card-hover);
-  border-color: rgba(239, 68, 68, 0.4);
+  border-color: rgba(225, 29, 72, 0.4);
   transform: translateY(-4px);
   box-shadow: 0 12px 30px -10px var(--accent-red-glow);
 }
 
-/* Neon glow effects */
-.glow-red {
-  box-shadow: 0 0 25px -3px var(--accent-red-glow);
+/* Buttons */
+.btn-racing {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--accent-red) 0%, #be123c 100%);
+  color: #ffffff !important;
+  font-weight: 800;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px -6px var(--accent-red-glow);
 }
 
-.glow-amber {
-  box-shadow: 0 0 25px -3px var(--accent-amber-glow);
+.btn-racing::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transform: skewX(-25deg);
+  transition: 0.6s ease;
 }
 
-.glow-text-red {
-  text-shadow: 0 0 15px rgba(239, 68, 68, 0.6);
+.btn-racing:hover::after {
+  left: 140%;
 }
 
-.glow-text-amber {
-  text-shadow: 0 0 15px rgba(245, 158, 11, 0.6);
+.btn-racing:hover {
+  background: linear-gradient(135deg, #f43f5e 0%, var(--accent-red) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px -4px var(--accent-red-glow);
 }
 
-/* Custom Scrollbar */
+/* Dyno Canvas */
+.dyno-canvas-container {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background: #08090d;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+/* Custom Scrollbars */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #08090c;
+  background: #06070a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #262938;
+  background: #1f2333;
   border-radius: 4px;
 }
 
@@ -125,68 +174,7 @@ body[dir="ltr"] {
   background: var(--accent-red);
 }
 
-/* Automotive Badge & Status Pulse */
-.pulse-dot {
-  position: relative;
-}
-
-.pulse-dot::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: inherit;
-  animation: pulse-ring 1.8s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-}
-
-@keyframes pulse-ring {
-  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
-  100% { transform: translate(-50%, -50%) scale(2.6); opacity: 0; }
-}
-
-/* Dyno Graph Canvas styling */
-.dyno-canvas-container {
-  position: relative;
-  width: 100%;
-  height: 280px;
-}
-
-/* Racing stripe accents */
-.racing-stripe {
-  background: linear-gradient(135deg, 
-    var(--accent-red) 0%, 
-    var(--accent-red) 50%, 
-    #b91c1c 50%, 
-    #b91c1c 100%);
-}
-
-.racing-gradient-text {
-  background: linear-gradient(135deg, #ffffff 30%, #ef4444 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.amber-gradient-text {
-  background: linear-gradient(135deg, #fbbf24 20%, #f59e0b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Zarinpal payment brand accents */
-.bg-zarinpal {
-  background: linear-gradient(135deg, #222b45 0%, #151a30 100%);
-  border: 1px solid #ffcc00;
-}
-
-.text-zarinpal {
-  color: #ffc400;
-}
-
-/* Modal transitions */
+/* Modals */
 .modal-backdrop {
   transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
 }
@@ -203,19 +191,7 @@ body[dir="ltr"] {
   visibility: visible;
 }
 
-.modal-content-scale {
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.modal-backdrop.hidden .modal-content-scale {
-  transform: scale(0.95) translateY(10px);
-}
-
-.modal-backdrop:not(.hidden) .modal-content-scale {
-  transform: scale(1) translateY(0);
-}
-
-/* Drawer transitions */
+/* Drawers */
 .drawer-backdrop {
   transition: opacity 0.3s ease;
 }
@@ -236,30 +212,13 @@ body[dir="ltr"] {
   transform: translateX(0);
 }
 
-/* Button glow button */
-.btn-racing {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.25s ease;
+/* Zarinpal Brand Theme */
+.bg-zarinpal {
+  background: linear-gradient(135deg, #1b2138 0%, #101424 100%);
+  border: 1px solid rgba(245, 158, 11, 0.4);
 }
 
-.btn-racing::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transform: skewX(-25deg);
-  transition: 0.6s ease;
-}
-
-.btn-racing:hover::after {
-  left: 140%;
-}
-
-/* Animations */
+/* Pulse animation */
 @keyframes revMeter {
   0% { width: 10%; }
   50% { width: 88%; }
@@ -270,7 +229,7 @@ body[dir="ltr"] {
   animation: revMeter 2s ease-out forwards;
 }
 
-/* Responsive tweaks */
+/* Mobile responsive */
 @media (max-width: 640px) {
   .dyno-canvas-container {
     height: 220px;
